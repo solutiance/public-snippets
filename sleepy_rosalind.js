@@ -204,7 +204,8 @@ const download = async (street,zip,city) => {
     }
     console.log(`Download von ${result.length} Dateien für ${street} ${zip} ${city} fertiggestellt!`)
     return result;
-}
+};
+window['download'] = download;
 preparePDFLib();
 console.log('Scan läuft. Bitte warten....')
 sleep(100);
